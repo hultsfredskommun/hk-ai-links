@@ -1,0 +1,19 @@
+.hkail_links_wrapper .hkail_link {
+  display: block;
+}
+.hkail_links_wrapper .cols {
+  display: inline-block;
+  vertical-align: top;
+}
+.hkail_links_wrapper .cols-2 {
+  width: 50%;
+}
+.hkail_links_wrapper .cols-3 {
+  width: 33.3%;
+}
+.hkail_links_wrapper .cols-4 {
+  width: 25%;
+}
+.hkail_links_wrapper .cols-5 {
+  width: 20%;
+}

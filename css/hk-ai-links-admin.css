@@ -1,0 +1,31 @@
+.settings_page_hkail_options .hkail_add_new span.hkail_hidden,
+.hkail_hidden,
+#hkail_delete,
+#hkail_update,
+#hkail_cancel {
+  display: none;
+}
+.settings_page_hkail_options .hkail_add_new span,
+.settings_page_hkail_options .hkail_link_wrapper {
+  display: block;
+  padding: 8px;
+}
+.settings_page_hkail_options .hkail_add_new label {
+  width: 100px;
+  display: inline-block;
+}
+#hkail_add_message.failed {
+  color: red;
+  font-weight: bold;
+}
+.settings_page_hkail_options .hkail_link_list .hkail_action {
+  float: right;
+  margin-left: 12px;
+}
+
+.settings_page_hkail_options .hkail_link_list .hkail_link_wrapper:nth-child(even) {
+  background: rgba(255, 255, 255, 0.4);
+}
+.settings_page_hkail_options .hkail_link_list .hkail_link_wrapper:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
