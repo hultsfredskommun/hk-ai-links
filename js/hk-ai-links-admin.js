@@ -172,6 +172,9 @@ jQuery(function($) {
                 $("#hkail_add_classes").val(link.data('classes'));
                 $("#hkail_add").hide();
                 $("#hkail_update, #hkail_cancel").show();
+								$([document.documentElement, document.body]).animate({
+										 scrollTop: $("#link_handling").offset().top
+								 }, 500);
               })
             });
             /* fetch click on all delete links */
@@ -186,6 +189,9 @@ jQuery(function($) {
                 $("#hkail_add_classes").val(link.data('classes'));
                 $("#hkail_add").hide();
                 $("#hkail_delete, #hkail_cancel").show();
+								$([document.documentElement, document.body]).animate({
+										 scrollTop: $("#link_handling").offset().top
+								 }, 500);
               })
             });
   					//console.log(response);

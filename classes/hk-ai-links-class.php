@@ -42,7 +42,7 @@ class HKAILinks {
   /* Echo add new link in option page */
   function echoLinkOption() {
     $ret = "<div class='hkail_add_new'>";
-    $ret .= "<h2>" . __("Link handling", 'hkail') . "</h2>";
+    $ret .= "<h2 id='link_handling'>" . __("Link handling", 'hkail') . "</h2>";
     $ret .= "<span class='hkail_hidden'><label>" . __("ID", 'hkail') . "</label><input id='hkail_add_id' name='hkail_add_id' type='text' /></span>";
     $ret .= "<span><label>" . __("Name", 'hkail') . "</label><input id='hkail_add_name' name='hkail_add_name' type='text' /></span>";
     $ret .= "<span><label>" . __("Url", 'hkail') . "</label><input id='hkail_add_href' name='hkail_add_href' type='text' /></span>";
@@ -88,7 +88,7 @@ class HKAILinks {
   }
 
   /* most clicked links */
-  function getMostClicked($user, $numLinks = '5', $columns = '1') {
+  function getMostClicked($user, $numLinks = '10', $columns = '1') {
     global $wpdb;
     $table = "";
 

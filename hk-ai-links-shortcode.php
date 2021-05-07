@@ -15,11 +15,11 @@ add_shortcode( 'most_clicked_links', 'hkail_most_click_shortcode_func' );
 
 function hkail_most_click_shortcode_v2_func( $atts ) {
   $atts = shortcode_atts( array(
-    'numLinks' => '5',
+    'numlinks' => '5',
     'text' => 'Här dyker dina mest klickade länkar upp.'
 	), $atts );
-
-	$ret = "<div class='hkail_most_click_wrapper_v2' data-num-links='".$atts['numLinks']."'>".$atts['text']."</div>";
+  
+	$ret = "<div class='hkail_most_click_wrapper_v2' data-num-links='".$atts['numlinks']."'>".$atts['text']."</div>";
   return $ret;
 }
 add_shortcode( 'hkail_most_clicked_links', 'hkail_most_click_shortcode_v2_func' );

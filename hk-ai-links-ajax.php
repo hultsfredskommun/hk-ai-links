@@ -31,7 +31,7 @@ function hkail_get_most_clicked_ajax_func() {
   /* get data */
   $data = json_decode(stripslashes($_REQUEST["data"]));
   $user = "";
-  $numLinks = "2";
+  $numLinks = "10";
   if (!empty($data) /*&& is_object($data)*/) {
     if (!empty($data->user)) { $user = $data->user; }
     if (!empty($data->numLinks)) { $numLinks = $data->numLinks; }
