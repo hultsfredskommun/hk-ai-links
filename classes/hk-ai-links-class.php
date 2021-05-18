@@ -99,10 +99,10 @@ class HKAILinks {
       $num_rows = count($rows);
       $num_rows_per_col = ceil($num_rows / $columns);
       if ($num_rows > 0) {
-        $table .= "<div class='rek-link-listener cols cols-" . $columns . "' data-rek-pagetype='Mest klickade'>";
+        $table .= "<div class='cols cols-" . $columns . "'>";
         $i = 0;
         foreach ($rows as $key => $value) {
-          $table .= "<a data-count='" . $value->count . "' data-rek-description='" . $value->id . "' data-id='" . $value->id . "' class='hkail_link rek-link-listener' class='" . $value->classes . "' href='" . $value->href . "'>" . $value->name . "</a>"; /* target='_blank'*/
+          $table .= "<a data-count='" . $value->count . "' data-id='" . $value->id . "' class='hkail_link' class='" . $value->classes . "' href='" . $value->href . "'>" . $value->name . "</a>"; /* target='_blank'*/
           if (((++$i) % $num_rows_per_col) == 0) {
             $table .= "</div><div class='cols cols-" . $columns . "'>";
           }
@@ -134,12 +134,12 @@ class HKAILinks {
     $num_rows_per_col = ceil($num_rows / $columns);
     $table = "";
     if ($num_rows > 0) {
-      $table .= "<div class='rek-link-listener cols cols-" . $columns . "' data-rek-pagetype='" . $groups . "'>";
+      $table .= "<div class='cols cols-" . $columns . "'>";
       $i = 0;
       foreach ($rows as $key => $value) {
-        $table .= "<a data-id='" . $value->id . "' data-rek-description='" . $value->id . "' class='hkail_link " . $value->classes . " rek-link-listener' href='" . $value->href . "'>" . $value->name . "</a>"; /*target='_blank' */
+        $table .= "<a data-id='" . $value->id . "' class='hkail_link " . $value->classes . "' href='" . $value->href . "'>" . $value->name . "</a>"; /*target='_blank' */
         if (((++$i) % $num_rows_per_col) == 0) {
-          $table .= "</div><div class='rek-link-listener cols cols-" . $columns . "' data-rek-pagetype='" . $groups . "'>";
+          $table .= "</div><div class='cols cols-" . $columns . "'>";
         }
       }
       $table .= "</div>";
