@@ -71,10 +71,9 @@ function hkail_enqueue_script() {
   wp_register_script( 'hkail_script', plugin_dir_url( __FILE__ ) . 'js/hk-ai-links.js' , array('jquery'));
 
 	$hkail_array = array(
-    //'test_text' => __($options['hkail_test_text'], 'hkail' ),
     'user' => __( get_current_user_id(), 'hkail' ),
     'title' => __( 'Hultsfreds kommun', 'hkail' ),
-    'ajaxurl' => admin_url( 'admin-ajax.php' )    
+    'ajaxurl' => admin_url( 'admin-ajax.php' )
 	);
 	wp_localize_script( 'hkail_script', 'hkail_js_object', $hkail_array );
 	wp_enqueue_script( 'hkail_script' );
